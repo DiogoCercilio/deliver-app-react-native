@@ -1,13 +1,21 @@
 import { SafeAreaView, Text, View, Image, TextInput, ScrollView } from 'react-native'
-import React, { useLayoutEffect } from 'react'
+import React, { useLayoutEffect, useState, useEffect } from 'react'
 import { useNavigation } from '@react-navigation/native'
 import { AdjustmentsIcon, ChevronDownIcon, SearchIcon, UserIcon } from "react-native-heroicons/outline";
 import Categories from '../components/Categories';
 import FeaturedRow from '../components/FeaturedRow';
+import FeaturedService from '../services/FeaturedService';
 
 const HomeScreen = () => {
     const navigation = useNavigation()
+    const [featuredCategories, setFeaturedCategories] = useState([])
+
     useLayoutEffect(() => navigation.setOptions({ headerShown: false }), [])
+    useEffect(() => {
+        FeaturedService
+            .getAll()
+            .then(res=> setFeaturedCategories(res))
+    }, [])
 
     return (
         <SafeAreaView className="bg-white pt-5">
@@ -48,9 +56,9 @@ const HomeScreen = () => {
                 <Categories />
 
                 {/* Featured rows */}
-                <FeaturedRow  id="1" title="Featured" description="Paid placements from our partners" featuredCategory="featured"/>
-                <FeaturedRow  id="2" title="Tasty Discounts" description="Paid placements from our partners" featuredCategory="featured"/>
-                <FeaturedRow  id="3" title="Offers near you" description="Why not support your local restaurants tonight?" featuredCategory="featured"/>
+                {featuredCategories.map(({id, title, description, category})=>
+                    <FeaturedRow  id={id} title={title} description={description} featuredCategory={category}/>
+                )}
             </ScrollView>
         </SafeAreaView>
     )

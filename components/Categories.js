@@ -1,8 +1,14 @@
-import { ScrollView, Text } from 'react-native'
-import React from 'react'
+import { ScrollView } from 'react-native'
+import React, { useEffect, useState } from 'react'
 import CategoryCard from './CategoryCard'
+import RestaurantsService from '../services/RestaurantsService'
 
 const Categories = () => {
+    const [categories, setCategories] = useState([])
+    useEffect(() => {
+        RestaurantsService.getCategories().then(res=> setCategories(res))
+    }, [])
+
     return (
         <ScrollView
             contentContainerStyle={{
@@ -13,14 +19,9 @@ const Categories = () => {
             showsHorizontalScrollIndicator={false}
         >
             {/* Category Card */}
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing1" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing2" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing3" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing4" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing5" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing6" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing7" />
-            <CategoryCard imgUrl={"https://links.papareact.com/gn7"} title="Testing8" />
+            {categories && categories.map(({ id, imgUrl, title }) =>
+                <CategoryCard key={id} imgUrl={imgUrl} title={title} />
+            )}
         </ScrollView>
     )
 }

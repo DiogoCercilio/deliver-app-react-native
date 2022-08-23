@@ -1,0 +1,77 @@
+{
+    "featured": [
+        {
+            "id": 1,
+            "title": "Featured",
+            "description": "Paid placements from our partners",
+            "category": "featured"
+        },
+        {
+            "id": 2,
+            "title": "Tasty Discounts",
+            "description": "Paid placements from our partners",
+            "category": "featured"
+        },
+        {
+            "id": 3,
+            "title": "Offers near you",
+            "description": "Why not support your local restaurants tonight?",
+            "category": "featured"
+        }
+    ],
+    "restaurants": [
+        {
+            "id": 1,
+            "imgUrl": "https://links.papareact.com/gn7",
+            "title": "Yo! Sushi",
+            "rating": 4.5,
+            "genre": "Japanese",
+            "address": "123 main st",
+            "short_description": "This is a test description",
+            "dishes": [],
+            "long": 20,
+            "lat": 0
+        },
+        {
+            "id": 2,
+            "imgUrl": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg",
+            "title": "Mexican Foodish",
+            "rating": 4.1,
+            "genre": "Mexican",
+            "address": "Av Test, 445",
+            "short_description": "This is another test description",
+            "dishes": [],
+            "long": 30,
+            "lat": 0
+        },
+        {
+            "id": 3,
+            "imgUrl": "https://c.ndtvimg.com/2020-04/dih4ifhg_pasta_625x300_22_April_20.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+            "title": "Italian Foodish",
+            "rating": 3.1,
+            "genre": "Italian",
+            "address": "Av Lorem Ipsum, 222",
+            "short_description": "This is one more test description",
+            "dishes": [],
+            "long": 40,
+            "lat": 0
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "imgUrl": "https://links.papareact.com/gn7",
+            "title": "Japanese"
+        },
+        {
+            "id": 2,
+            "imgUrl": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg",
+            "title": "Mexican"
+        },
+        {
+            "id": 3,
+            "imgUrl": "https://c.ndtvimg.com/2020-04/dih4ifhg_pasta_625x300_22_April_20.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
+            "title": "Italian"
+        }
+    ]
+}
