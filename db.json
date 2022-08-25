@@ -28,7 +28,27 @@
             "genre": "Japanese",
             "address": "123 main st",
             "short_description": "This is a test description",
-            "dishes": [],
+            "dishes": [{
+                "id": 111,
+                "name": "Dish 1",
+                "description": "hscjkakh",
+                "price": 1.99,
+                "image": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg"
+            },
+            {
+                "id": 112,
+                "name": "Dish 2",
+                "description": "bla",
+                "price": 2.99,
+                "image": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg"
+            },
+            {
+                "id": 113,
+                "name": "Dish 3",
+                "description": "bla bla",
+                "price": 3.99,
+                "image": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg"
+            }],
             "long": 20,
             "lat": 0
         },
@@ -65,13 +85,23 @@
         },
         {
             "id": 2,
-            "imgUrl": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg",
+            "imgUrl": "https://rimage.gnst.jp/livejapan.com/public/article/detail/a/00/00/a0000464/img/basic/a0000464_main.jpg?20170412181618&q=80&rw=750&rh=536",
             "title": "Mexican"
         },
         {
             "id": 3,
+            "imgUrl": "https://caminhoslanguages.com/wp-content/uploads/2020/04/traditional-brazilian-foods-1.jpg",
+            "title": "Brazilian"
+        },
+        {
+            "id": 4,
             "imgUrl": "https://c.ndtvimg.com/2020-04/dih4ifhg_pasta_625x300_22_April_20.jpg?im=FaceCrop,algorithm=dnn,width=1200,height=886",
             "title": "Italian"
+        },
+        {
+            "id": 5,
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrr9Lg_kcI-2PtC4_iicryga4rhm1lHAOrehJ-4BkaHZxF9ZyHwuQJWkxW6d2OCyUlxtQ&usqp=CAU",
+            "title": "Burgers"
         }
     ]
 }

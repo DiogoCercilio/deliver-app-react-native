@@ -19,7 +19,7 @@ const Categories = () => {
             showsHorizontalScrollIndicator={false}
         >
             {/* Category Card */}
-            {categories && categories.map(({ id, imgUrl, title }) =>
+            {categories.map(({ id, imgUrl, title }) =>
                 <CategoryCard key={id} imgUrl={imgUrl} title={title} />
             )}
         </ScrollView>
