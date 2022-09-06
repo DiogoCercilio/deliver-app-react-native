@@ -1,5 +1,7 @@
 # A simple APP for Delivery.
-### techonologies: React Native, Redux, Tailwind UI 
+### techonologies: React Native, Redux, Expo, Tailwind UI 
+
+<img src="record.gif" width="250" />
 
 ## Running the application:
 
@@ -11,5 +13,3 @@ Running the application (Mocked Backend):
 ```sh
 npm run start:api
 ```
-
-<img src="record.gif" />
