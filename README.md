@@ -16,6 +16,9 @@ npm run start:api
 
 Todo List:
 
+- Unit Tests
+- E2E Tests
+- CI / CD configurations
 - Search feature
 - Profile Page
 - Product Filters
