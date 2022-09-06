@@ -1,8 +1,6 @@
 # A simple APP for Delivery.
 ### techonologies: React Native, Redux, Tailwind UI 
 
-![Screenshot](screenshot.png)
-
 ## Running the application:
 
 ```sh
@@ -13,3 +11,5 @@ Running the application (Mocked Backend):
 ```sh
 npm run start:api
 ```
+
+<img src="screenshot.png" width="250" />
