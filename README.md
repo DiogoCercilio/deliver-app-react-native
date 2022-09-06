@@ -12,4 +12,4 @@ Running the application (Mocked Backend):
 npm run start:api
 ```
 
-<img src="screenshot.png" width="250" />
+<img src="record.gif" />

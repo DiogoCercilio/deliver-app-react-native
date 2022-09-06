@@ -74,7 +74,7 @@ const RestaurantScreen = () => {
                     {(dishes && dishes.length) ? dishes.map(({ id, name, description, price, image }) =>
                         <DishRow key={id} id={id} name={name} description={description} price={price} image={image} />)
                         :
-                        <Text className="text-center color-gray-500">No dishes found - {dishes}</Text>
+                        <Text className="text-center color-gray-400">No dishes found :(</Text>
                     }
                 </View>
             </ScrollView>
