@@ -13,3 +13,13 @@ Running the application (Mocked Backend):
 ```sh
 npm run start:api
 ```
+
+Todo List:
+
+- Search feature
+- Profile Page
+- Product Filters
+- Payment flow
+- Admin Dashboard
+- Remove Mocked API (Create APIs in NodeJS / GOlang)
+- UI Improvements. in general
