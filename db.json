@@ -22,35 +22,37 @@
     "restaurants": [
         {
             "id": 1,
-            "imgUrl": "https://links.papareact.com/gn7",
+            "imgUrl": "https://restaurantclicks.com/wp-content/uploads/2022/04/Popular-Japanese-Foods.jpg",
             "title": "Yo! Sushi",
             "rating": 4.5,
             "genre": "Japanese",
             "address": "123 main st",
             "short_description": "This is a test description",
-            "dishes": [{
-                "id": 111,
-                "name": "Dish 1",
-                "description": "hscjkakh",
-                "price": 1.99,
-                "image": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg"
-            },
-            {
-                "id": 112,
-                "name": "Dish 2",
-                "description": "bla",
-                "price": 2.99,
-                "image": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg"
-            },
-            {
-                "id": 113,
-                "name": "Dish 3",
-                "description": "bla bla",
-                "price": 3.99,
-                "image": "https://img.bestrecipes.com.au/yrLSK4sI/w643-h428-cfill-q90/br/2016/11/real-tacos-507300-1.jpg"
-            }],
-            "long": 20,
-            "lat": 0
+            "long": -45.8333371,
+            "lat": -23.1790012,
+            "dishes": [
+                {
+                    "id": 111,
+                    "name": "Dish 1",
+                    "description": "hscjkakh",
+                    "price": 1.99,
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRr-LkTfIca9-Y982aYMfJCnis2LmqE9m1CcuWKMuTJ6_yhN-sRRMHQS6GiJGU32qIA2ro&usqp=CAU"
+                },
+                {
+                    "id": 112,
+                    "name": "Dish 2",
+                    "description": "bla",
+                    "price": 2.99,
+                    "image": "https://i.pinimg.com/600x315/21/b0/57/21b0576efc9e2aa8736fdfba1a9838ee.jpg"
+                },
+                {
+                    "id": 113,
+                    "name": "Dish 3",
+                    "description": "bla bla",
+                    "price": 3.99,
+                    "image": "https://st.depositphotos.com/2066681/4243/i/600/depositphotos_42430839-stock-photo-temaki.jpg"
+                }
+            ]
         },
         {
             "id": 2,
@@ -61,8 +63,8 @@
             "address": "Av Test, 445",
             "short_description": "This is another test description",
             "dishes": [],
-            "long": 30,
-            "lat": 0
+            "long": -45.8333371,
+            "lat": -23.1790012
         },
         {
             "id": 3,
@@ -73,8 +75,8 @@
             "address": "Av Lorem Ipsum, 222",
             "short_description": "This is one more test description",
             "dishes": [],
-            "long": 40,
-            "lat": 0
+            "long": -45.8333371,
+            "lat": -23.1790012
         }
     ],
     "categories": [

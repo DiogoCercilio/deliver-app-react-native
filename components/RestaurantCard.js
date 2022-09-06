@@ -3,12 +3,12 @@ import { LocationMarkerIcon, StarIcon } from 'react-native-heroicons/outline'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 
-const RestaurantCard = ({ imgUrl, title, rating, genre, address, short_description, dishes }) => {
+const RestaurantCard = ({ imgUrl, title, rating, genre, address, short_description, dishes, long, lat }) => {
     const navigation = useNavigation()
     return (
         <TouchableOpacity 
             className="bg-white mr-3 shadow"
-            onPress={()=> navigation.navigate('Restaurant', { imgUrl, title, rating, genre, address, short_description, dishes })}
+            onPress={()=> navigation.navigate('Restaurant', { imgUrl, title, rating, genre, address, short_description, dishes, long, lat })}
         >
             <Image source={{ uri: imgUrl }} className="h-36 w-64 rounded-sm"/>
             <View className="px-3 pb-4">

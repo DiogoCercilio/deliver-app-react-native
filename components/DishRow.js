@@ -1,7 +1,7 @@
 import { View, Text, TouchableOpacity } from 'react-native'
 import Currency from 'react-currency-formatter'
 import React, { useState } from 'react'
-import { Image } from 'react-native-svg'
+import { Image } from 'react-native'
 import { MinusCircleIcon, PlusCircleIcon, ReceiptTaxIcon } from 'react-native-heroicons/outline'
 import { useDispatch, useSelector } from 'react-redux'
 import { addToBasket, removeFromBasket, selectBasketItemsWIthId } from '../features/basketSlice'
@@ -16,7 +16,7 @@ const DishRow = ({ id, name, description, price, image }) => {
     }
 
     const removeItemsFromBasket = () => {
-        if (!items.length) return
+        if (!items?.length) return
         dispatch(removeFromBasket({ id }))
     }
 
@@ -28,21 +28,21 @@ const DishRow = ({ id, name, description, price, image }) => {
                         <Text className="text-lg mb-1">{name}</Text>
                         <Text className="text-gray-400">{description}</Text>
                         <Text className="text-green-600 mt-2">
-                            <Currency quantity={price} currency="BRL" />
+                            <Currency quantity={price} currency="USD" />
                         </Text>
                     </View>
                     <View>
                         {/* <Text>{image}</Text> */}
-                        <View className="w-20 h-20 bg-gray-100">
+                        <View className="bg-gray-100">
                             <Image
+                                width={75}
+                                height={75}
                                 style={{
-                                    width: 200,
-                                    height: 200,
                                     borderWidth: "1px",
                                     borderColor: "#f3f3f4"
                                 }}
                                 source={{ uri: image }}
-                                className="w-full h-20 bg-gray-300 p-4"
+                                className="max-w-full bg-gray-300 p-4"
                             />
                         </View>
                     </View>
@@ -52,7 +52,7 @@ const DishRow = ({ id, name, description, price, image }) => {
             {isPressed && 
                 <View className="flex-row  items-center bg-white px-4">
                     <TouchableOpacity className="bg-white border-0" onPress={removeItemsFromBasket}>
-                        <MinusCircleIcon size={30}></MinusCircleIcon>
+                        <MinusCircleIcon size={30} color={items?.length ? "#00ccbb" : "gray"} style={{opacity: items?.length ? 1 : .1}}></MinusCircleIcon>
                     </TouchableOpacity>
 
                     <Text className="p-2 color-blue-400">
@@ -60,7 +60,7 @@ const DishRow = ({ id, name, description, price, image }) => {
                     </Text>
 
                     <TouchableOpacity className="bg-white border-0" onPress={addItemsToBasket}>
-                        <PlusCircleIcon size={30}></PlusCircleIcon>
+                        <PlusCircleIcon size={30} color="#00ccbb"></PlusCircleIcon>
                     </TouchableOpacity>
 
                 </View>
