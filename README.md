@@ -1,5 +1,7 @@
 # A simple APP for Delivery.
-### techonologies: React Native, Redux, Tailwind UI 
+### techonologies: React Native, Redux, Expo, Tailwind UI 
+
+<img src="record.gif" width="250" />
 
 ## Running the application:
 
@@ -12,4 +14,15 @@ Running the application (Mocked Backend):
 npm run start:api (Deprecated. Use API repository (Soon))
 ```
 
-<img src="record.gif" />
+Todo List:
+
+- Unit Tests
+- E2E Tests
+- CI / CD configurations
+- Search feature
+- Profile Page
+- Product Filters
+- Payment flow
+- Admin Dashboard
+- Remove Mocked API (Create APIs in NodeJS / GOlang)
+- UI Improvements. in general
