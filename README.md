@@ -9,7 +9,7 @@ npm start
 
 Running the application (Mocked Backend):
 ```sh
-npm run start:api
+npm run start:api (Deprecated. Use API repository (Soon))
 ```
 
 <img src="record.gif" />

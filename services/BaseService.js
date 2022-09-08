@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:4000'
+const API_URL = 'http://localhost:3000'
 
 export class BaseService {
     static get apiUrl() {
@@ -6,5 +6,9 @@ export class BaseService {
     }
     static get(path) {
         return fetch(`${API_URL}/${path}`).then(res=> res.json())
+    }
+
+    static onError(err) {
+        if(err.status === 404) console.log('Err>>>> ', err)
     }
 }

@@ -6,7 +6,7 @@ import RestaurantsService from '../services/RestaurantsService'
 const Categories = () => {
     const [categories, setCategories] = useState([])
     useEffect(() => {
-        RestaurantsService.getCategories().then(res=> setCategories(res))
+        RestaurantsService.getCategories().then(res=> setCategories(res || []))
     }, [])
 
     return (
@@ -19,8 +19,8 @@ const Categories = () => {
             showsHorizontalScrollIndicator={false}
         >
             {/* Category Card */}
-            {categories.map(({ id, imgUrl, title }) =>
-                <CategoryCard key={id} imgUrl={imgUrl} title={title} />
+            {categories.map(({ id, image, title }) =>
+                <CategoryCard key={id} image={image} title={title} />
             )}
         </ScrollView>
     )
